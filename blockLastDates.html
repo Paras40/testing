@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+  <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <input type="date" id="date">
+
+  <script type="text/javascript">
+
+    var today = new Date();
+
+    var year = today.getFullYear()
+    var month = ("0" + (today.getMonth() + 1)).slice(-2);
+    var date = ("0" + (today.getDate())).slice(-2);
+    var total = year + '-' + month + '-' + date
+
+    document.getElementById("date").value = total;
+    document.getElementById("date").setAttribute("min", total)
+
+  </script>
+
+</body>
+
+</html>
