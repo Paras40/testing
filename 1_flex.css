@@ -1,0 +1,29 @@
+.flex-container{
+display:flex;
+/* Center in a row */
+justify-content: center; 
+/* Center in a column */
+align-items: center;
+/* flex-direction: column; */
+flex-wrap: wrap;
+
+}
+.flex-item{
+    border:2px solid black;
+    margin: 10px;
+    padding: 12px;
+    width: 100px;
+    height: 100px;
+}
+.item-1{
+    order:2;
+    flex-grow: 3;
+}
+.item-3{
+    order:1;
+    flex-grow: 3;
+}
+.item-2{
+    /* flex-shrink: 3; */
+    align-self: center;
+}
